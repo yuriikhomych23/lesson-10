@@ -1,0 +1,68 @@
+header, footer {
+    height: 150px;
+    background-color: $mainBgColor;
+    text-align: center;
+    @include fontChange(40px, 100px, $mainTextColor);
+    // line-height: 100px;
+    // color: $mainTextColor;
+    // font-size: 40px;
+}
+
+main {
+    min-height: 400px;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+        .box{
+            width: 30%;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: $mainBgColor;
+            color: $mainTextColor;
+            font-size: $mainTextSize;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+}
+
+
+.header-tab {
+    @include flexCenter;
+    // display: flex;
+    flex-flow: column nowrap;
+    // justify-content: center;
+    // align-items: center;
+        &__menu {
+            width: 60%;
+            height: 50px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+            &__link{
+                display: block;
+                width: 150px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background-color: $mainTextColor;
+                color: $mainBgColor;
+                text-decoration: none;
+            }
+}
+
+
+// .text{
+//     box-shadow: 2px 2px 15px red;
+//     &--sm {
+//         font-size: 12px;
+//     }
+//     &--blck {
+//         color: black;
+//     }
+// }
